@@ -2,7 +2,7 @@ const express = require('express');
 const db = require("./K054_db_actions.js");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 var houses, rooms, devices;
